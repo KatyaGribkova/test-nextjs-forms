@@ -46,7 +46,7 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <p>Forms Example</p>
-        <form name='contact-form' method='post' onSubmit={handleSubmit}>
+        <form name='contact-form' method='post' data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit}>
           <input type='hidden' name='form-name' value='contact' />
           <p>
             <label>
